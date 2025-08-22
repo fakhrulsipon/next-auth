@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 146, "column": 0}, "map": {"version":3,"sources":["file:///C:/projects/learn_nextjs/nestjs_app/src/app/api/auth/%5B...nextauth%5D/route.js"],"sourcesContent":["import NextAuth from \"next-auth\";\r\nimport GoogleProvider from \"next-auth/providers/google\";\r\n\r\nexport const authOptions = {\r\n  secret: process.env.NEXTAUTH_SECRET,\r\n  session: { strategy: \"jwt\" },\r\n  pages: { signIn: \"/login\" }, // চাইলে বাদ দিতে পারেন\r\n  providers: [\r\n    GoogleProvider({\r\n      clientId: process.env.GOOGLE_CLIENT_ID || \"\",\r\n      clientSecret: process.env.GOOGLE_CLIENT_SECRET || \"\",\r\n    }),\r\n  ],\r\n};\r\n\r\nconst handler = NextAuth(authOptions);\r\nexport { handler as GET, handler as POST };\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;AAEO,MAAM,cAAc;IACzB,QAAQ,QAAQ,GAAG,CAAC,eAAe;IACnC,SAAS;QAAE,UAAU;IAAM;IAC3B,OAAO;QAAE,QAAQ;IAAS;IAC1B,WAAW;QACT,CAAA,GAAA,qJAAA,CAAA,UAAc,AAAD,EAAE;YACb,UAAU,QAAQ,GAAG,CAAC,gBAAgB,IAAI;YAC1C,cAAc,QAAQ,GAAG,CAAC,oBAAoB,IAAI;QACpD;KACD;AACH;AAEA,MAAM,UAAU,CAAA,GAAA,uIAAA,CAAA,UAAQ,AAAD,EAAE","debugId":null}}]
+}

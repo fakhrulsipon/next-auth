@@ -1,0 +1,12 @@
+{
+  "/(dashboards)/user-dashboard/addProducts/page": "app/(dashboards)/user-dashboard/addProducts/page.js",
+  "/(dashboards)/user-dashboard/overview/page": "app/(dashboards)/user-dashboard/overview/page.js",
+  "/(dashboards)/user-dashboard/page": "app/(dashboards)/user-dashboard/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/products/[id]/route": "app/api/products/[id]/route.js",
+  "/api/products/route": "app/api/products/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/products/page": "app/products/page.js"
+}

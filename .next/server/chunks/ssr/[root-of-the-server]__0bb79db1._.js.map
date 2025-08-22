@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/projects/learn_nextjs/nestjs_app/src/app/login/page.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst Login = () => {\r\n    return (\r\n        <div>\r\n            <h1>this is login page</h1>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default Login;"],"names":[],"mappings":";;;;AAAA;;;AAEA,MAAM,QAAQ;IACV,qBACI,8OAAC;kBACG,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGhB;uCAEe","debugId":null}}]
+}

@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MyStore - Next.js Product App
 
-## Getting Started
+## 🔗 Live Demo
+Check out the live version of MyStore here:  
+[🌐 MyStore Live Demo](https://your-live-link.vercel.app)  
+*(Replace the above URL with your deployed Vercel link)*
 
-First, run the development server:
+---
 
+## 🌟 Project Description
+MyStore is a modern e-commerce web application built with **Next.js 13+ (App Router)**, **Tailwind CSS**, and **MongoDB**.  
+It allows users to view latest products, add new products (for admins), and manage their dashboard. The project includes **client-side route protection**, **dynamic product listing**, **theme toggle**, and a responsive UI.
+
+---
+
+## ⚡ Features
+- Client-side route protection using NextAuth
+- Dashboard for managing products
+- Latest products section on the homepage
+- Responsive design with Tailwind CSS
+- Theme toggle (light/dark)
+- MongoDB integration for product storage
+- Server-side API routes for fetching products
+
+---
+
+## 🛠 Setup & Installation
+
+### 1. Clone the repository
 ```bash
+git clone <your-repo-url>
+cd mystore
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Configure environment variables
+Create a .env file in the root directory with the following variables:
+
+env
+Copy
+Edit
+MONGO_URI=<your-mongodb-connection-string>
+NEXTAUTH_SECRET=<your-nextauth-secret>
+NEXTAUTH_URL=http://localhost:3000
+4. Run the development server
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Build for production
+bash
+Copy
+Edit
+npm run build
+npm start
+🗂 Route Summary
+Route	Description	Access
+/	Homepage with latest products	Public
+/login	User login page	Public
+/user-dashboard/overview	Dashboard overview page	Authenticated users only
+/user-dashboard/addProducts	Add new product page	Authenticated users only
+/api/products	CRUD operations for products	Server-side
+/api/products/latest	Fetch latest 4 products	Public API
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Note: All dashboard routes are client-side protected. Users who are not logged in will be redirected to the login page.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 Deployment
+Recommended hosting: Vercel.
 
-## Learn More
+Push your project to GitHub.
 
-To learn more about Next.js, take a look at the following resources:
+Connect the GitHub repository to Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add your environment variables in Vercel dashboard.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy — your project will be live with server-side APIs and MongoDB integration.
 
-## Deploy on Vercel
+📝 Tech Stack
+Next.js 13+ (App Router)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React & Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MongoDB & Mongoose
+
+NextAuth.js for authentication
+
+react-hot-toast for notifications
+
+React Icons for UI icons

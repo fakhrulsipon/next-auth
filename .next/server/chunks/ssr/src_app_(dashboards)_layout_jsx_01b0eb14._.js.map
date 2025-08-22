@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/projects/learn_nextjs/nestjs_app/src/app/%28dashboards%29/layout.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nconst DashboardLayout = ({ children }) => {\r\n    return (\r\n        <div>\r\n\r\n            <div className='grid grid-cols-12'>\r\n                {/* side nav */}\r\n                <div className='col-span-3 bg-blue-200 min-h-screen'>\r\n                  <ul>\r\n                    <li>add products</li>\r\n                  </ul>\r\n                </div>\r\n                <div className='col-span-9'>\r\n                     {children}\r\n                </div>\r\n\r\n            </div>\r\n            \r\n        </div>\r\n    );\r\n};\r\n\r\nexport default DashboardLayout;"],"names":[],"mappings":";;;;AAAA;;;AAEA,MAAM,kBAAkB,CAAC,EAAE,QAAQ,EAAE;IACjC,qBACI,8OAAC;kBAEG,cAAA,8OAAC;YAAI,WAAU;;8BAEX,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;kCACC,cAAA,8OAAC;sCAAG;;;;;;;;;;;;;;;;8BAGR,8OAAC;oBAAI,WAAU;8BACT;;;;;;;;;;;;;;;;;AAOtB;uCAEe","debugId":null}}]
+}
