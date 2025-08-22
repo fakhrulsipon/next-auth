@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 Check out the live version of MyStore here:  
-[🌐 MyStore Live Demo](https://your-live-link.vercel.app)  
+[🌐 MyStore Live Demo](https://nestjs-app-one.vercel.app/)  
 *(Replace the above URL with your deployed Vercel link)*
 
 ---
