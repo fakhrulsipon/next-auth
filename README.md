@@ -17,7 +17,7 @@ It allows users to view latest products, add new products (for admins), and mana
 - Client-side route protection using NextAuth
 - Dashboard for managing products
 - Latest products section on the homepage
-- Responsive design with Tailwind CSS
+- Responsive designs with Tailwind CSS
 - Theme toggle (light/dark)
 - MongoDB integration for product storage
 - Server-side API routes for fetching products
